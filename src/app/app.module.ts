@@ -15,10 +15,10 @@ import { ProductTracklistingComponent } from './product-tracklisting/product-tra
 import { ProductListComponent } from './product-list/product-list.component';
 import { constants } from 'os';
 
-declare const appRoutes: Routes[{
-  path: products,
-  component: ProductListComponent
-}];
+const appRoutes: Routes = [
+  { path: 'products', component: ProductListComponent },
+  { path: 'product/:id', component: ProductListComponent }
+];
 
 @NgModule({
   declarations: [
